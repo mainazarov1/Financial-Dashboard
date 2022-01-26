@@ -1,0 +1,22 @@
+{
+  "name": "financial-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mainazarov1/Financial-Dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mainazarov1/Financial-Dashboard/issues"
+  },
+  "homepage": "https://github.com/mainazarov1/Financial-Dashboard#readme",
+  "dependencies": {
+    "sass": "^1.49.0"
+  }
+}
