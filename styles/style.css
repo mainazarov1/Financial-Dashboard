@@ -25,7 +25,7 @@ ol {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1740px;
   margin: 0 auto;
   padding: 0 25px;
   border-radius: 28px;
@@ -103,7 +103,14 @@ ol {
   min-width: 160px;
   min-height: 40px;
 }
-.aside .button {
+.aside .aside__button img {
+  margin: 0 0 0 5px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #ffc145;
   border-radius: 14px;
   font-family: "Quicksand";
@@ -111,9 +118,7 @@ ol {
   font-size: 11px;
   line-height: 14px;
   color: #404040;
-}
-.aside .button img {
-  margin: 0 0 0 5px;
+  border: none;
 }
 
 .dashboard__header {
@@ -165,6 +170,15 @@ ol {
 
 .dashboard__cards {
   grid-area: cards;
+}
+
+.title {
+  font-family: Suprema;
+  font-weight: 600;
+  font-size: 20.1118px;
+  line-height: 25px;
+  color: #404040;
+  margin-bottom: 15px;
 }
 
 .cards__title {
@@ -550,7 +564,73 @@ ol {
 }
 
 .dashboard__loan {
-  background-color: forestgreen;
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  gap: 15px;
+  min-height: 180px;
+}
+.dashboard__loan .transfer__users {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 16px 0;
+}
+.dashboard__loan .transfer__user {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: stretch;
+}
+.dashboard__loan .transfer__user span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #ffc145;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+.dashboard__loan .transfer__user:last-child p {
+  white-space: nowrap;
+}
+.dashboard__loan .transfer__form {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  gap: 10px;
+}
+.dashboard__loan .transfer__input {
+  background: #ffffff;
+  border: 1px solid #197bbd;
+  border-radius: 8px;
+  padding: 10px;
+}
+.dashboard__loan .loan__card {
+  position: relative;
+  background: linear-gradient(135deg, #ed654c 0%, #d05842 100%);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 19.0044px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.dashboard__loan .loan__card::before {
+  content: url(../assets/icons/clouds-coins.svg);
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}
+.dashboard__loan .loan__text {
+  font-family: "Suprema";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.dashboard__loan .loan__text img {
+  margin: 5px 0 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

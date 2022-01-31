@@ -32,7 +32,7 @@ ol {
   list-style: none;
 }
 .container {
-  max-width: 1440px;
+  max-width: 1740px;
   margin: 0 auto;
   padding: 0 25px;
   border-radius: 28px;
@@ -118,20 +118,24 @@ ol {
   .aside__button {
     min-width: 160px;
     min-height: 40px;
+		img {
+			margin: 0 0 0 5px;
+		}
   }
-  .button {
-    background: $yellow-color;
-    border-radius: 14px;
-    // padding: 18px 13px;
-    font-family: "Quicksand";
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 14px;
-    color: #404040;
-    img {
-      margin: 0 0 0 5px;
-    }
-  }
+}
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $yellow-color;
+	border-radius: 14px;
+	// padding: 18px 13px;
+	font-family: "Quicksand";
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 14px;
+	color: #404040;
+	border: none;
 }
 .dashboard__header {
   grid-area: header;
@@ -189,6 +193,14 @@ ol {
   grid-area: cards;
   // background-color: blue;
 }
+.title {
+	font-family: Suprema;
+	font-weight: 600;
+	font-size: 20.1118px;
+	line-height: 25px;
+	color: $black-color;
+	margin-bottom: 15px;
+}
 .cards {
   &__title {
     font-family: Suprema;
@@ -198,8 +210,7 @@ ol {
     color: $black-color;
     margin-bottom: 14px;
   }
-  .title {
-  }
+  
   &__content {
     display: flex;
     justify-content: space-between;
@@ -617,5 +628,88 @@ ol {
 }
 .dashboard__loan {
   // grid-area: "aside";
-  background-color: forestgreen;
+  // background-color: forestgreen;
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  gap: 15px;
+  min-height: 180px;
+  .transfer {
+  }
+  .transfer__loan {
+  }
+  .title {
+  }
+  .transfer__users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+		margin: 0 0 16px 0;
+  }
+  .transfer__user {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      background-color: $yellow-color;
+      border-radius: 50%;
+      margin-left: 8px;
+    }
+    &:last-child p {
+      white-space: nowrap;
+    }
+  }
+  .transfer__form {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    gap: 10px;
+  }
+  .transfer__input {
+    background: #ffffff;
+    border: 1px solid #197bbd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .transfer__button {
+  }
+  .button {
+  }
+  &__card {
+  }
+  &__text {
+  }
+  .loan__card {
+    position: relative;
+    background: linear-gradient(135deg, #ed654c 0%, #d05842 100%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 19.0044px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    &::before {
+      content: url(../assets/icons/clouds-coins.svg);
+      position: absolute;
+      top: 5px;
+      left: -10px;
+    }
+  }
+  .box {
+  }
+  .loan__text {
+    font-family: "Suprema";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+		img {
+			margin: 5px 0 0 20px;
+		}
+  }
 }
