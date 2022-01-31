@@ -5,11 +5,216 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./styles/style.css">
 	<title>Financial Dashboard</title>
 </head>
 
 <body>
-
+	<div class="container">
+		<div class="dashboard">
+			<aside class="dashboard__aside aside">
+				<a href="#" class="logo">
+					<div class="logo__image">
+						<img class="logo__cloud" src="./assets/icons/cloud.svg" alt="cloud">
+						<img class="logo__coin" src="./assets/icons/coin.svg" alt="coin">
+						<span>cloudcash</span>
+					</div>
+				</a>
+				<nav class="aside__nav">
+					<ul class="aside__list">
+						<li class="aside__item"><a href="#" class="aside__link"><img src="./assets/icons/diagramm.svg"
+									alt="">Overview</a>
+						</li>
+						<li class="aside__item"><a href="#" class="aside__link"><img src="./assets/icons/list.svg"
+									alt="">Transactions</a></li>
+						<li class="aside__item"><a href="#" class="aside__link"><img src="./assets/icons/card.svg" alt="">Cards</a>
+						</li>
+						<li class="aside__item"><a href="#" class="aside__link"><img src="./assets/icons/paper.svg"
+									alt="">Invoices</a>
+						</li>
+						<li class="aside__item"><a href="#" class="aside__link"><img src="./assets/icons/rank.svg" alt="">Goals</a>
+						</li>
+						<li class="aside__item"><a href="#" class="aside__link"><img src="./assets/icons/settings.svg"
+									alt="">Settings</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="aside__upgrade">
+					<img src="./assets/icons/download.svg" alt="upgrade">
+					<p>Give your money <br>awesome space in cloud</p>
+					<button class="aside__button button">Upgrade to premium <img src="./assets/icons/arrow.svg"
+							alt="arrow"></button>
+				</div>
+			</aside>
+			<header class="dashboard__header header">
+				<div class="header__content">
+					<h1 class="header__heading">Weekly sumup</h1>
+					<h3 class="header__description">Get summary of your weekly online transactions here.</h3>
+				</div>
+				<div class="header__login">
+					<a href="" class="header__link">
+						<img src="./assets/icons/mail.svg" alt="mail">
+					</a>
+					<a href="" class="header__link">
+						<img src="./assets/icons/bell.svg" alt="bell">
+					</a>
+					<a href="" class="header__link">
+						<img src="./assets/icons/user.svg" alt="user">
+						<h4>Andrew</h4>
+						<p>Admin account</p>
+					</a>
+				</div>
+			</header>
+			<div class="dashboard__cards cards box">
+				<h2 class="cards__title title">Cards</h2>
+				<div class="cards__content">
+					<div class="cards__item">
+						<div class="cards__front card">
+							<h3>cloudcash</h3>
+							<p>PREMIUM ACCOUNT</p>
+							<ul class="card__numbers">
+								<li class="card__number">5789</li>
+								<li class="card__number">****</li>
+								<li class="card__number">****</li>
+								<li class="card__number">2847</li>
+							</ul>
+							<div class="card__name">
+								<h6>Card holder</h6>
+								<h5>Mike Smith</h5>
+							</div>
+							<div class="card__date">
+								<h6>Expire date</h6>
+								<h5>06/21</h5>
+							</div>
+							<img src="./assets/icons/Vector.svg" alt="">
+						</div>
+						<div class="cards__limit">
+							<div class="cards__range"></div>
+							<p class="cards__text text">Weekly payment limit</p>
+							<span>$350.60 / $4000</span>
+						</div>
+					</div>
+					<ul class="cards__list list">
+						<li class="list__item">
+							<h4><span>$</span> 2850.75</h4>
+							<p>Current balance</p>
+						</li>
+						<li class="list__item">
+							<h4><span>$</span> 1500.50</h4>
+							<p>Income</p>
+						</li>
+						<li class="list__item">
+							<h4><span>$</span> 350.60</h4>
+							<p>Outcome</p>
+						</li>
+						<li class="list__item">
+							<a href="#"></a>
+							<p>Deacivate card</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="dashboard__transaction box">
+				<h2 class="transaction__title title">Transaction history</h2>
+				<table>
+					<tr>
+						<th>Reciever</th>
+						<th>Type</th>
+						<th>Date</th>
+						<th>Amount</th>
+					</tr>
+					<tr>
+						<td>Tesco Market</td>
+						<td>Shopping</td>
+						<td>13 Dec 2020</td>
+						<td>$75.67</td>
+					</tr>
+					<tr>
+						<td>ElectroMen Market</td>
+						<td>Shopping</td>
+						<td>14 Dec 2020</td>
+						<td>$250.00</td>
+					</tr>
+					<tr>
+						<td>Fiorgio Restaurant</td>
+						<td>Food</td>
+						<td>07 Dec 2020</td>
+						<td>$19.50</td>
+					</tr>
+					<tr>
+						<td>John Mathew Kayne</td>
+						<td>Sport</td>
+						<td>06 Dec 2020</td>
+						<td>$350</td>
+					</tr>
+					<tr>
+						<td>Ann Marlin</td>
+						<td>Shopping</td>
+						<td>31 Nov 2020</td>
+						<td>$430</td>
+					</tr>
+				</table>
+			</div>
+			<div class="dashboard__info">
+				<div class="dashboard__goals">
+					<h2 class="goals__title title">Goals <span>+</span></h2>
+					<div class="goals__wrap">
+						<div class="goals__item box">
+							<h3 class="goals__title">$550</h3>
+							<p class="goals__text">12/20/20</p>
+							<img class="goals__icon" src="./assets/icons/mountain.svg" alt="">
+							<h4 class="goals__description">Holidays</h4>
+						</div>
+						<div class="goals__item box">
+							<h3 class="goals__title">$200</h3>
+							<p class="goals__text">12/20/20</p>
+							<img class="goals__icon" src="./assets/icons/brush.svg" alt="">
+							<h4 class="goals__description">Renovation</h4>
+						</div>
+						<div class="goals__item box">
+							<h3 class="goals__title">$820</h3>
+							<p class="goals__text">12/20/20</p>
+							<img class="goals__icon" src="./assets/icons/xbox.svg" alt="">
+							<h4 class="goals__description">Xbox</h4>
+						</div>
+					</div>
+				</div>
+				<div class="dashboard__statistics">
+					<div class="statistics__title title">Outcome Statistics</div>
+					<ul class="statistics__list">
+						<li class="statistics__item">
+							<div class="statistics__icon">
+								<img src="./assets/icons/market-color.svg" alt="market">
+							</div>
+							<div class="statistics__range"></div>
+							<span>52%</span>
+							<p>Shoppping</p>
+						</li>
+						<li class="statistics__item">
+							<div class="statistics__icon">
+								<img src="./assets/icons/truck-color.svg" alt="truck">
+							</div>
+							<div class="statistics__range"></div>
+							<span>21%</span>
+							<p>Electronics</p>
+						</li>
+						<li class="statistics__item">
+							<div class="statistics__icon">
+								<img src="./assets/icons/plane.svg" alt="plane">
+							</div>
+							<div class="statistics__range"></div>
+							<span>74%</span>
+							<p>Travels</p>
+						</li>
+					</ul>
+				</div>
+				<div class="dashboard__loan">
+					sdfasfg
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
