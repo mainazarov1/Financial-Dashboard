@@ -1,0 +1,74 @@
+$blue-color: #197bbd;
+$darkBlue-color: #0f4264;
+$black-color: #404040;
+$grey-color: #aeaeae;
+$lightGrey-color: #c7c7c7;
+$yellow-color: #ffc145;
+$green-color: #439a86;
+$orange-color: #bb4430;
+$white-color: #ffffff;
+@font-face {
+  font-family: "Suprema-bold";
+  src: url(../../assets/fonts/Suprema/Suprema\ Bold.ttf);
+}
+@font-face {
+  font-family: "Suprema-regular";
+  src: url(../../assets/fonts/Suprema/Suprema\ Regular.ttf);
+}
+@font-face {
+	font-family: "Suprema-light";
+	src: url(../../assets/fonts/Suprema/Suprema\ Light.ttf);
+}
+h2{
+	font-family: 'Suprema-regular', sans-serif;
+	color: $black-color;
+}
+.container {
+  max-width: 1740px;
+  margin: 0 auto;
+  padding: 0 45px;
+  border-radius: 28px;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: 210px 1fr 1fr;
+  grid-template-rows: 155p 360px 360px;
+  grid-template-areas:
+    "aside header header"
+    "aside cards info"
+    "aside transaction info";
+  gap: 30px;
+}
+.dashboard__info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $yellow-color;
+  border-radius: 14px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 14px;
+  color: $black-color;
+  border: none;
+  cursor: pointer;
+}
+.box {
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 28px;
+  padding: 16px;
+}
+.title {
+  font-family: "Suprema-regular";
+  font-size: 20px;
+  line-height: 25px;
+  color: $black-color;
+}

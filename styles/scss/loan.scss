@@ -1,0 +1,112 @@
+.dashboard__loan {
+  // grid-area: "aside";
+  // background-color: forestgreen;
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  gap: 15px;
+  min-height: 180px;
+  .transfer {
+  }
+  .transfer__title {
+    margin: 0 0 16px 0;
+  }
+  .transfer__users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 16px 0;
+  }
+  .transfer__user {
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      background-color: $yellow-color;
+      border-radius: 50%;
+      margin-left: 8px;
+    }
+    a,
+    p {
+      font-family: "Suprema-light";
+      font-size: 12px;
+      line-height: 15px;
+      color: $black-color;
+    }
+    &:last-child {
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      p {
+        white-space: nowrap;
+        transform: translateY(95%);
+      }
+    }
+  }
+  .transfer__form {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    gap: 10px;
+  }
+  .transfer__input {
+    background: #ffffff;
+    border: 1px solid #197bbd;
+    border-radius: 8px;
+    padding: 10px;
+    &::placeholder {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 24px;
+      color: $lightGrey-color;
+    }
+    &::before {
+    	content: '$';
+    	position: absolute;
+    	font-size: 20px;
+    	height: 20px;
+    	width: 20px;
+    	color: red;
+    	background-color: $yellow-color;
+    }
+  }
+  .transfer__button {
+  }
+  &__card {
+  }
+  &__text {
+  }
+  .loan__card {
+    position: relative;
+    background: linear-gradient(135deg, #ed654c 0%, #d05842 100%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 19.0044px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    &::before {
+      content: url(../assets/icons/clouds-coins.svg);
+      position: absolute;
+      top: 5px;
+      left: -10px;
+    }
+  }
+  .loan__text {
+    font-family: "Suprema-regular", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: $white-color;
+    img {
+      margin: 5px 0 0 0px;
+    }
+  }
+}

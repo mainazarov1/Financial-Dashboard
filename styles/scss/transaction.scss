@@ -1,0 +1,54 @@
+.dashboard__transaction {
+  grid-area: transaction;
+  // background-color: blueviolet;
+  table {
+    width: 100%;
+    margin: 20px 0 0 0;
+    border-collapse: collapse;
+    tbody {
+      tr {
+        &:not(:first-child) {
+          border-bottom: 0.5px solid #ececec;
+        }
+        th {
+          font-family: "Suprema-light", sans-serif;
+          font-size: 14px;
+          line-height: 17px;
+          color: $grey-color;
+          text-align: start;
+          padding: 0 0 8px 0;
+        }
+				th:last-child {
+					text-align: end;
+				}
+        td:last-child {
+          font-family: "Lato", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+          color: $black-color;
+          text-align: end;
+        }
+        td {
+          font-family: "Suprema-light", sans-serif;
+          font-size: 14px;
+          line-height: 17px;
+          color: $lightGrey-color;
+          padding: 12px 0;
+					img {
+						width: 20px;
+						height: 20px;
+						margin: 0 0 -5px 0;
+						padding: 4px;
+						background: #EFEFEF;
+						border-radius: 5px;
+					}
+        }
+        td:last-child {
+          text-align: end;
+        }
+      }
+    }
+  }
+}

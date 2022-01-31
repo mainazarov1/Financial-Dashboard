@@ -1,0 +1,107 @@
+.dashboard__aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside {
+  padding: 50px 0px;
+  display: grid;
+  grid-template-rows: 155px 1fr 10vh;
+  border-right: 1px solid #f8f8f8;
+  .logo {
+    display: block;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+    &:hover span {
+      transition: 0.3s;
+      transform: scale(1.2);
+    }
+    &__image {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    &__cloud {
+      position: relative;
+      margin-right: 12px;
+    }
+    &__coin {
+      position: absolute;
+      top: -5px;
+      left: 25px;
+    }
+    span {
+      transition: 0.3s;
+    }
+  }
+  .aside__nav {
+  }
+  .aside__list {
+  }
+  .aside__item {
+    margin-bottom: 10px;
+  }
+  .aside__link {
+    display: flex;
+    align-items: center;
+    width: 165px;
+    height: 39px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $lightGrey-color;
+    transition: 0.3s;
+    &:hover {
+      background: #f0f7ff;
+      border-radius: 4px;
+      color: #197bbd;
+      & svg path {
+        stroke: #197bbd;
+      }
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 18px;
+      margin: 10px;
+    }
+    svg path {
+      stroke: $lightGrey-color;
+      transition: 0.3s;
+    }
+  }
+  .aside__upgrade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {
+      margin-bottom: 10px;
+    }
+    p {
+      font-family: 'Suprema-regular', sans-serif;
+      font-size: 8px;
+      line-height: 11px;
+      color: #404040;
+      margin-bottom: 15px;
+    }
+  }
+  .aside__button {
+    min-width: 160px;
+    min-height: 40px;
+    img {
+      margin: 0 0 0 5px;
+    }
+  }
+}
